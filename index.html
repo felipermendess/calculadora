@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Calculadora</h1>
+        <div class="tela"></div>
+        <table>
+            <tr>
+                <td><button onclick="limpar()">C</button></td>
+                <td><button onclick="clean()"><</button></td>
+                <td><button onclick="integrar('/')">/</button></td>
+                <td><button onclick="integrar('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="integrar(7)">7</button></td>
+                <td><button onclick="integrar(8)">8</button></td>
+                <td><button onclick="integrar(9)">9</button></td>
+                <td><button onclick="integrar('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="integrar(4)">4</button></td>
+                <td><button onclick="integrar(5)">5</button></td>
+                <td><button onclick="integrar(6)">6</button></td>
+                <td><button onclick="integrar('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="integrar(1)">1</button></td>
+                <td><button onclick="integrar(2)">2</button></td>
+                <td><button onclick="integrar(3)">3</button></td>
+                <td rowspan="2"><button style="height: 125px; background-color: orangered;" onclick="igual()" >=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2";"><button style="width: 125px;" onclick="integrar(0)">0</button></td>
+                <td><button onclick="integrar('.')">.</button></td>
+            </tr>
+        </table>
+            <span><a href="">&copy;felipermendess</a></span>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
